@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+.legal-section {
+  width: 100%;
+  margin-top: 200px;
+  position: relative;
+  /* background: aqua; */
+}
+.legal-section .legal-banner {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+}
+.legal-section .legal-banner .left {
+  width: 40%;
+  height: 100%;
+  /* background: bisque; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* row-gap: 30px; */
+  margin-left: 200px;
+}
+.legal-section .legal-banner .left span {
+  width: 200px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  font-weight: 600;
+  font-size: 20px;
+  background: #ffb134;
+}
+.legal-section .legal-banner .left h1 {
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.legal-section .legal-banner .left p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.legal-section .legal-banner .rigth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: rebeccapurple; */
+}
+
+.legal-section .legal-banner .rigth img {
+  position: absolute;
+  width: 50%;
+  right: 30px;
+  top: 0;
+}
+
+.card-legal {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background: radial-gradient(85.95% 85.95% at 47.28% -3.82%, #0262d3 0%, #015dcb 17%, #004fb5 43%, #0048aa 54%, #002e7f 100%);
+  backdrop-filter: blur(10px); /* Efek blur */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-legal .card-wrapper {
+  display: flex;
+  flex-direction: row;
+  column-gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 980px) {
+  .legal-section .legal-banner {
+    height: 50vh;
+  }
+  .legal-section .legal-banner .left {
+    margin-left: 50px;
+  }
+  .legal-section .legal-banner .rigth img {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+  }
+  .legal-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .card-legal {
+    height: 1200px;
+  }
+  .card-legal .card-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .legal-section .legal-banner {
+    height: 70vh;
+    flex-direction: column-reverse;
+  }
+  .legal-section .legal-banner .left {
+    width: 100%;
+
+    margin-left: 0;
+    padding-left: 15px;
+    height: 60%;
+  }
+  .legal-section .legal-banner .rigth img {
+    position: absolute;
+    width: 70%;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

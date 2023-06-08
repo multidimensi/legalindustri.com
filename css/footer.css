@@ -1,0 +1,125 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* contact form  */
+
+/* footer */
+footer {
+  position: relative;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 0;
+  padding-right: 0;
+  background: var(--main-color);
+  /* background: radial-gradient(85.95% 85.95% at 47.28% -3.82%, #0262d3 0%, #015dcb 17%, #004fb5 43%, #0048aa 54%, #002e7f 100%); */
+}
+
+#footer {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer .footer-left {
+  /* background: rebeccapurple; */
+  width: 30%;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+.social-links a {
+  font-size: 30px;
+  color: #fff;
+  margin: 10px 0;
+}
+.social-links a:hover {
+  font-size: 31px;
+  color: var(--second-color);
+}
+
+.footer .footer-rigth {
+  width: 60%;
+  /* background: red; */
+}
+.footer-rigth .footer-link {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-rigth ul {
+  padding: 0;
+}
+.footer-rigth ul a {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  /* background: peachpuff; */
+}
+.footer-rigth ul li ul a {
+  font-size: 16px;
+  font-weight: 500;
+  /* padding: 8px 0; */
+}
+.footer-rigth ul a:hover {
+  text-decoration: underline;
+}
+.footer-rigth ul li {
+  padding: 8px 0;
+}
+.footer-link .border {
+  display: none;
+}
+
+.footer .container p {
+  font-size: 12px;
+  color: rgb(207, 207, 207);
+}
+
+@media screen and (max-width: 980px) {
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer .footer-left {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .footer .footer-rigth {
+    width: 100%;
+    /* background: red; */
+  }
+  .footer-rigth .footer-link {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border-bottom: 1px solid #ffffff; */
+  }
+  .footer-link .border {
+    margin: 10px 0;
+  }
+  .footer-link .border {
+    display: block;
+  }
+}

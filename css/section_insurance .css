@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+.card-insurance {
+  position: relative;
+  width: 100%;
+  padding: 50px 0;
+  background: radial-gradient(85.95% 85.95% at 47.28% -3.82%, #0262d3 0%, #015dcb 17%, #004fb5 43%, #0048aa 54%, #002e7f 100%);
+  backdrop-filter: blur(10px); /* Efek blur */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-insurance .card-wrapper {
+  display: flex;
+  flex-direction: row;
+  column-gap: 100px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card-insurance .card-wrapper a {
+  height: 150px;
+  width: 150px;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex: 1 0 150px; Set lebar item menjadi 150px */
+
+  transition: all 0.3s ease;
+}
+.capitalize-sentences {
+  text-transform: capitalize;
+}
+
+.card-insurance .card-wrapper a:hover {
+  border: none;
+  background-color: var(--second-color);
+}
+.card-insurance .card-wrapper .card {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  text-align: center;
+}
+/* media screen */
+
+/* Tata letak untuk layar desktop */
+
+/* Tata letak untuk layar tablet */
