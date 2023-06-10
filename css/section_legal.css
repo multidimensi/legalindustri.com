@@ -79,7 +79,7 @@
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1024px) {
   .legal-section .legal-banner {
     height: 50vh;
   }
@@ -107,14 +107,18 @@
     align-items: center;
   }
 }
+
 @media screen and (max-width: 480px) {
+  .legal-section {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
   .legal-section .legal-banner {
-    height: 70vh;
+    height: 100vh;
     flex-direction: column-reverse;
   }
   .legal-section .legal-banner .left {
     width: 100%;
-
     margin-left: 0;
     padding-left: 15px;
     height: 60%;
