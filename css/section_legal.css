@@ -114,7 +114,7 @@
     margin-bottom: 50px;
   }
   .legal-section .legal-banner {
-    height: 100vh;
+    height: 120vh;
     flex-direction: column-reverse;
   }
   .legal-section .legal-banner .left {
